@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+    </head>
+    <body>
+        <h2><strong>Datos Usuario</strong></h2>
+        <br>
+        <h3><strong>Rellena tu CV</strong></h3>
+        <br>
+        <label for="nombre">Nombre</label>
+        <br>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="apellidos">Apellidos</label>
+        <br>
+        <input type="text" id="apellidos" name="apellidos">
+        <br>
+        <label for="password">Contraseña</label>
+        <br>
+        <input type="password" id="password" name="password">
+        <br>
+        <label for="com_pass">Confirme Contraseña</label>
+        <br>
+        <input type="password" id="com_pass" name="com_pass">
+        <br>
+        <label for="identificacion">Identificacion</label>
+        <br>
+        <select name="documento" id="identificacion">
+           <option value="TI">TI</option>
+           <option value="CC">CC</option>
+           <option value="CE">CE</option>
+        </select>
+        <input type="number" id="identificacion" name="numero">
+        <br>
+        <span>Sexo</span>
+        <br>
+        <input type="radio" id="hombre" name="sexo" value="Hombre">
+        <label for="hombre">Hombre</label>
+        <br>
+        <input type="radio" id="mujer" name="sexo" value="Mujer">
+        <label for="mujer">Mujer</label>
+        <br>
+        <br>
+        <br>
+        <span>Incluir mi foto</span>
+        <br>
+        <input type="submit" id="examinar" value="Examinar...">
+        <label for="examinar">No se ha seleccionado nungún archivo.</label>
+        <br>
+        <input type="checkbox" name="ocupacion" id="estudiante" value="Estudiante">
+        <label for="estudiante">Estudiante</label>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span>Datos personales</span>
+        <br>
+        <br>
+        <section>
+           <label for="departamento">Departamento</label>
+           <br>
+           <select name="nombre_depar" id="departamento">
+               <option value="">-selecciona-</option>
+               <option value="default">-selecciona-</option>
+               <option value="Antioquia">Antioquia</option>
+               <option value="Atlantico">Atlantico</option>
+               <option value="Bogota">Bogota</option>
+               <option value="Bolivar">Bolivar</option>
+               <option value="Boyaca">Boyaca</option>
+               <option value="Caldas">Caldas</option>
+               <option value="Caqueta">Caqueta</option>
+               <option value="Casanare">Casanare</option>
+               <option value="Cauca">Cauca</option>
+               <option value="Cesar">Cesar</option>
+               <option value="Choco">Choco</option>
+               <option value="Cordoba">Cordoba</option>
+               <option value="Cundinamarca">Cundinamarca</option>
+               <option value="Guainia">Guainia</option>
+               <option value="Guaviare">Guaviare</option>
+               <option value="Huila">Huila</option>
+               <option value="La Guajira">La Guajira</option>
+               <option value="Magdalena">Magdalena</option>
+               <option value="Meta">Meta</option>
+               <option value="Narino">Narino</option>
+               <option value="Norte de Santander">Norte de Santander</option>
+               <option value="Putumayo">Putumayo</option>
+               <option value="Quindio">Quindio</option>
+               <option value="Risaralda">Risaralda</option>
+               <option value="San Andres y Providencia">San Andres y Providencia</option>
+               <option value="Santander">Santander</option>
+               <option value="Sucre">Sucre</option>
+               <option value="Tolima">Tolima</option>
+               <option value="Valle del Cauca">Valle del Cauca</option>
+               <option value="Vaupes">Vaupes</option>
+               <option value="Vichada">Vichada</option>
+            </select>
+            <br>
+            <br>
+            <span>Fecha de nacimiento</span>
+            <br>
+            <input type="number" name="dia" id="fecha">
+            <label for="fecha">de</label>
+            <select name="mes" id="fecha">
+               <option value="Enero">Enero</option>
+               <option value="Febrero">Febrero</option>
+               <option value="Marzo">Marzo</option>
+               <option value="Abril">Abril</option>
+               <option value="Mayo">Mayo</option>
+               <option value="Junio">Junio</option>
+               <option value="Julio">Julio</option>
+               <option value="Agosto">Agosto</option>
+               <option value="Septiembre">Septiembre</option>
+               <option value="Octubre">Octubre</option>
+               <option value="Noviembre">Noviembre</option>
+               <option value="Diciembre">Diciembre</option>
+            </select>
+            <label for="fecha">de</label>
+            <input type="number" name="año" id="fecha">
+       </section>
+       <br>
+       <br>
+       <span>Temas de interés</span> 
+       <br>
+           <textarea></textarea>
+       <br>
+       <input type="submit" value="Guardar Cambios">
+       <input type="submit" value="Borrar los datos introducidos">
+    </body>
+</html>

@@ -1,0 +1,29 @@
+.fondo1 {
+    background: url("https://c4.wallpaperflare.com/wallpaper/38/840/1012/nissan-skyline-gt-r-r34-nissan-gt-r-r35-wallpaper-preview.jpg") #000;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+form {
+    background: #fffffff3;
+    border-radius: 10px;
+    position: absolute;
+}
+
+select{
+    width: 400px;
+}
+
+.icon{
+    padding-left: 8%;
+}
+
+.center-content{
+    text-align: center;
+}
+
+
+.espacio{
+    padding-top: 140px;
+    padding-left: 240px;
+}

@@ -1,0 +1,88 @@
+.entorno{
+    box-shadow: 1px 1px 10px #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.campo{
+    width: 100%;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+.rejilla{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 50px 50px 50px;
+}
+
+.rejilla2{
+    display: grid;
+    grid-template-columns: 450px 450px;
+    padding-top: 12px;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 405px;
+    max-width: 405px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+select{
+    width: 260px;
+    padding: 5px;
+    font-size: 16px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    width: 250px;
+    padding: 3px;
+    margin-bottom: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.space{
+    text-align: center;
+}
+
+.space2{
+    margin-top: 25px;
+}
+
+.space3{
+    margin-top: 10px;
+}
+
+.space4{
+    margin-top: 35px;
+}
+
+form{
+    width: 1000px;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.boton-personalizado {
+    width: 80px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 5;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    text-align: center;
+}
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <h1>Página principal de persona.</h1>
+    <table border=1>
+        <thead>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Documento</th>
+            <th>Ciudad</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan</td>
+                <td>Rios</td>
+                <td>1501234</td>
+                <td>Bogota</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>Paella</td>
+                <td>1505879</td>
+                <td>Barranquilla</td>
+            </tr>
+        </tbody>
+    </table>
+    {% if ciudades %}
+        <ul>
+            {% {% for ciudad in ciudades %}
+            <li><b>Nombre:</b>{{ ciudad.nombre }}
+            {% endfor %}%}
+        </ul>
+    {% endif %} 
+       
+</body>
+</html>

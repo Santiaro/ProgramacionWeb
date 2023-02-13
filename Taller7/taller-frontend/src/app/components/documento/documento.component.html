@@ -1,0 +1,53 @@
+<div class="container-fluid vw-100 vh-100 d-flex align-items-center justify-content-center" id="main-container">
+    <form class="col-12 row d-flex justify-content-center" id="form">
+        <div class="card p-5 col-6">
+            <div class="row mb-5">
+                <h1 class="fs-2 text-center fw-bold">Tipo Documento</h1>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <label for="name" class="form-label fw-bold">Nombre</label>
+                    <div class="input-group d-flex">
+                        <input type="text" class="form-control order-2" name="name" id="name">
+                        <span class="input-group-text order-1"><i class="fas fa-id-card"></i></span>
+                        <span class="focus-border"><i></i></span>
+                        <div class="invalid-feedback order-3"></div>
+                    </div>    
+                </div>
+                <div class="col">
+                    <label for="lastname" class="form-label fw-bold">Descripción</label>
+                    <div class="input-group d-flex">
+                        <input type="text" class="form-control order-2" name="lastname" id="lastname">
+                        <span class="input-group-text order-1"><i class="fas fa-id-card"></i></span>
+                        <span class="focus-border"><i></i></span>
+                        <div class="invalid-feedback order-3"></div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="row col-12 mb-2 mt-3"> 
+                <div class="col px-3 text-center">
+                    <button class="btn btn-main fw-bold">Insertar</button>
+                </div>
+                <div class="col px-3 text-center">
+                    <button class="btn btn-main fw-bold">Listar</button>
+                </div>
+                <div class="col px-3 text-center">
+                    <button class="btn btn-main fw-bold">Actualizar</button>
+                </div>
+                <div class="col px-3 text-center">
+                    <button class="btn btn-main fw-bold">Eliminar</button>
+                </div>           
+            </div>
+
+            <div class="row col-12 mb-2 mt-5"> 
+                <div class="col px-3 text-center">
+                    <button class="btn btn-main fw-bold" (click)="navigate('personas')">CRUD personas</button>
+                </div>
+                <div class="col px-3 text-center">
+                    <button class="btn btn-main fw-bold" (click)="navigate('ciudades')">CRUD ciudades</button>
+                </div>         
+            </div>
+        </div>
+    </form>
+</div>

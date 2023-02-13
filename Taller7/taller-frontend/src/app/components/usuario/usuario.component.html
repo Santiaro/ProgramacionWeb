@@ -1,0 +1,133 @@
+<div class="container-fluid vw-100 vh-100 d-flex align-items-center justify-content-center" id="main-container">
+    <div class="col-12 row d-flex justify-content-center" id="form" [formGroup]="form">
+        <div class="card px-5 py-2 col-6">
+            <div class="row mb-5">
+                <h1 class="fs-2 text-center fw-bold">Personas</h1>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <label for="name" class="form-label fw-bold">Nombre</label>
+                    <div class="input-group d-flex">
+                        <input type="text" class="form-control order-2" formControlName="name" id="name">
+                        <span class="input-group-text order-1"><i class="fas fa-id-card"></i></span>
+                        <span class="focus-border"><i></i></span>
+                        <div class="invalid-feedback order-3"></div>
+                    </div>    
+                </div>
+                <div class="col">
+                    <label for="lastname" class="form-label fw-bold">Apellidos</label>
+                    <div class="input-group d-flex">
+                        <input type="text" class="form-control order-2" formControlName="lastname" id="lastname">
+                        <span class="input-group-text order-1"><i class="fas fa-id-card"></i></span>
+                        <span class="focus-border"><i></i></span>
+                        <div class="invalid-feedback order-3"></div>
+                    </div>
+                </div>
+            </div>                
+            <div class="row mb-4">
+                <div class="col">
+                    <label for="username" class="form-label fw-bold">Usuario</label>
+                    <div class="input-group d-flex">
+                        <input type="text" class="form-control order-2" formControlName="username" id="username" >
+                        <span class="input-group-text order-1"><i class="fas fa-user"></i></span>
+                        <span class="focus-border"><i></i></span>
+                        <div class="invalid-feedback order-3"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="email" class="form-label fw-bold">Correo Electrónico</label>
+                    <div class="input-group d-flex">
+                        <input type="email" class="form-control order-2" formControlName="email" id="email">
+                        <span class="input-group-text order-1"><i class="fas fa-envelope"></i></span>
+                        <span class="focus-border"><i></i></span>
+                        <div class="invalid-feedback order-3"></div>
+                    </div>
+                </div>
+            </div> 
+            <div class="row mb-4">
+                <div class="col">
+                    <label for="password" class="form-label fw-bold">Contraseña</label>
+                    <div class="input-group d-flex">
+                        <input type="password" class="form-control order-2" formControlName="password" id="password" >
+                        <span class="input-group-text order-1"><i class="fas fa-lock"></i></span>
+                        <span class="focus-border"><i></i></span>
+                        <div class="invalid-feedback order-3"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="password2" class="form-label fw-bold">Confirmar contraseña</label>
+                    <div class="input-group d-flex">
+                        <input type="password" class="form-control order-2" formControlName="password2" id="password2">
+                        <span class="input-group-text order-1"><i class="fas fa-lock"></i></span>
+                        <span class="focus-border"><i></i></span>
+                        <div class="invalid-feedback order-3"></div>
+                    </div>
+                </div>
+            </div>                       
+            <div class="row mb-4">
+                <div class="col">
+                    <label for="address" class="form-label fw-bold">Dirección</label>
+                    <div class="input-group d-flex">
+                        <input type="text" class="form-control order-2" formControlName="address" id="address" placeholder="Cll, Cra, Av, Anv, Trans">
+                        <span class="input-group-text order-1"><i class="fas fa-home"></i></span>
+                        <span class="focus-border"><i></i></span>
+                        <div class="invalid-feedback order-3"></div>
+                    </div>
+                </div>   
+                <div class="col">
+                    <label for="doc" class="form-label fw-bold">Documento de identidad</label>
+                    <div class="input-group d-flex">
+                        <input type="text" class="form-control order-2" formControlName="doc" id="doc" >
+                        <span class="input-group-text order-1"><i class="fas fa-home"></i></span>
+                        <span class="focus-border"><i></i></span>
+                        <div class="invalid-feedback order-3"></div>
+                    </div>
+                </div>                    
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <label for="phone" class="form-label fw-bold">Teléfono</label>
+                    <div class="input-group d-flex">
+                        <input type="text" class="form-control order-2" formControlName="phone" id="phone">
+                        <span class="input-group-text order-1"><i class="fas fa-phone"></i></span>
+                        <span class="focus-border"><i></i></span>
+                        <div class="invalid-feedback order-3"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="birthDay" class="form-label fw-bold" onsubmit="updateEdad()">Fecha de Nacimiento</label>
+                    <div class="input-group d-flex">
+                        <input type="date" class="form-control order-2" formControlName="birthDay" id="birthDay">
+                        <span class="input-group-text order-1"><i class="fas fa-birthday-cake"></i></span>
+                        <span class="focus-border"><i></i></span>
+                        <div class="invalid-feedback order-3"></div>
+                    </div>
+                </div>
+            </div>
+                                               
+            <div class="row col-12 mb-2 mt-3"> 
+                <div class="col px-3 text-center">
+                    <button class="btn btn-main fw-bold" (click)="insert()">Insertar</button>
+                </div>
+                <div class="col px-3 text-center">
+                    <button class="btn btn-main fw-bold" (click)="read()">Listar</button>
+                </div>
+                <div class="col px-3 text-center">
+                    <button class="btn btn-main fw-bold" (click)="update()">Actualizar</button>
+                </div>
+                <div class="col px-3 text-center">
+                    <button class="btn btn-main fw-bold" (click)="delete()">Eliminar</button>
+                </div>           
+            </div>
+
+            <div class="row col-12 mb-2 mt-5"> 
+                <div class="col px-3 text-center">
+                    <button class="btn btn-main fw-bold" (click)="navigate('documentos')">CRUD Tipo de documento</button>
+                </div>
+                <div class="col px-3 text-center">
+                    <button class="btn btn-main fw-bold" (click)="navigate('ciudades')">CRUD ciudades</button>
+                </div>         
+            </div>
+        </div>
+    </div>
+</div>

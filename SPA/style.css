@@ -1,0 +1,45 @@
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.tabla {
+	margin: 20px;
+}
+
+.tabla table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.tabla th,
+.tabla td {
+	padding: 5px;
+	text-align: left;
+}
+
+.tabla th {
+	background-color: #333;
+	color: #fff;
+}
+
+.tabla tbody tr:nth-child(even) {
+	background-color: #f2f2f2;
+}

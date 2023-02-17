@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <title>Formulario de Afiliación</title>
+    </head>
+    <body>
+        <section class="form"> 
+            <h4>Web Developer</h4>
+            <form id="form">
+            <fieldset class=fieldset>
+               
+            <h3>Formulario de Afiliación</h3>
+            
+            <div class="input-field col s6" id="g">  
+                <i class="material-icons prefix">account_circle</i>
+                <input id="nombre" type="text" name="nombre" class="validate" />
+               <label for="nombre">Nombre completo</label>
+               
+            </div>
+              
+              <div class="input-field col s6">
+                <i class="material-icons prefix">contact_mail</i>
+                <input id="email" type="text" name="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">contact_phone</i>
+                <input id="telefono" type="text" name="telefono" class="validate">
+                <label for="telefono">Teléfono</label> 
+              </div>
+            <div>
+            <input id="gustos" type="text" name="gustos"><button for="gustos" id="botongustos" type="submit" name="submit">Gustos</button>
+            </div>
+
+        <script>
+            const form = document.getElementById("form");
+            form.addEventListener("submit", function(event){
+                event.preventDefault();
+                let formu = new FormData(form);
+                let table = document.getElementById("tabla");
+                let newRow = table.insertRow(-1);
+                let newCell = newRow.insertCell(0);
+                newCell.textContent = from.get("gustos")
+                
+                
+            })
+        </script>
+            
+             </fieldset>
+            </form>
+            <div>
+                <table>
+                    <thead>
+                        <th>Gusto</th>
+                        <th>%</th>
+                        <th>edit</th>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table id="tabla">
+            </div>
+            </section>
+            <script type="text/javascript" src="js/materialize.min.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>      
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    </body>
+</html>

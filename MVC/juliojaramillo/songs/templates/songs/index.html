@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Julio Jaramillo songs</title>
+</head>
+<body>
+    <h1>Canciones de Julio Jaramillo</h1>
+    <table border=1>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for song in songs %}
+            <tr>
+                <td>{{ song.title }}</td>
+                <td>{{ song.artist }}</td>
+                <td>{{ song.album }}</td>
+                <td>{{ song.year }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h2>Añada una nueva canción</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add</button>
+    </form>
+
+    {% if form.errors %}
+    <p>Por favor corrija los siguientes errores:</p>
+    <ul>
+        {% for field in form %}
+            {% for error in field.errors %}
+            <li>{{ field.label }}: {{ error }}</li>
+            {% endfor %}
+        {% endfor %}
+    </ul>
+{% endif %}
+
+</body>
+</html>

@@ -3,23 +3,152 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi sitio web con Bootstrap</title>
+    <title>SPA con tablas alimentarias</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="app.js"></script>
+	<link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
 
     <header class="bg-primary text-white">
       <div class="container">
-        <h1>Mi sitio web</h1>
+        <h1>SPA con tablas alimentarias</h1>
       </div>
     </header>
 
-    <div class="container mt-5">
-      <h2>Bienvenidos a mi sitio web</h2>
-      <p>Este es un sitio web sencillo creado con Bootstrap.</p>
-    </div>
+    <header>
+		<nav>
+			<ul>
+				<li><a href="#tabla1">Tabla 1</a></li>
+				<li><a href="#tabla2">Tabla 2</a></li>
+                <li><a href="#tabla3">Tabla 3</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="tabla1" class="tabla">
+			<h1>Tabla de alimentos 1</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>Alimento</th>
+						<th>Calorías</th>
+						<th>Proteínas</th>
+						<th>Grasas</th>
+						<th>Carbohidratos</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Manzana</td>
+						<td>52</td>
+						<td>0.3 g</td>
+						<td>0.2 g</td>
+						<td>14 g</td>
+					</tr>
+					<tr>
+						<td>Plátano</td>
+						<td>89</td>
+						<td>1.1 g</td>
+						<td>0.3 g</td>
+						<td>23 g</td>
+					</tr>
+					<tr>
+						<td>Naranja</td>
+						<td>47</td>
+						<td>0.9 g</td>
+						<td>0.1 g</td>
+						<td>12 g</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section id="tabla2" class="tabla">
+			<h1>Tabla de alimentos 2</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>Alimento</th>
+						<th>Calorías</th>
+						<th>Proteínas</th>
+						<th>Grasas</th>
+						<th>Carbohidratos</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Lechuga</td>
+						<td>14</td>
+						<td>1.4 g</td>
+						<td>0.2 g</td>
+						<td>2.9 g</td>
+					</tr>
+					<tr>
+						<td>Tomate</td>
+						<td>18</td>
+						<td>0.9 g</td>
+						<td>0.2 g</td>
+						<td>3.9 g</td>
+					</tr>
+					<tr>
+						<td>Zanahoria</td>
+						<td>41</td>
+						<td>0.9 g</td>
+						<td>0.2 g</td>
+						<td>10
+				    </tr>
+				    <tr>
+					    <td>Pollo</td>
+					    <td>165</td>
+					    <td>31.0 g</td>
+					    <td>3.6 g</td>
+					    <td>0 g</td>
+				    </tr>
+			    </tbody>
+		    </table>
+	    </section>
+        <section id="tabla3" class="tabla">
+			<h1>Tabla de alimentos 3</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>Alimento</th>
+						<th>Calorías</th>
+						<th>Proteínas</th>
+						<th>Grasas</th>
+						<th>Carbohidratos</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Harinapan</td>
+						<td>500</td>
+						<td>10 g</td>
+						<td>200 g</td>
+						<td>600 g</td>
+					</tr>
+					<tr>
+						<td>Buñuelows</td>
+						<td>462</td>
+						<td>8 g</td>
+						<td>26 g</td>
+						<td>49 g</td>
+					</tr>
+					<tr>
+						<td>Limón</td>
+						<td>29</td>
+						<td>1.1 g</td>
+						<td>0.3 g</td>
+						<td>9 g</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+    </main>
 
-    <footer class="bg-dark text-white mt-5">
+    
+    <footer class="bg-dark text-white">
       <div class="container">
         <p>Todos los derechos reservados.</p>
       </div>
